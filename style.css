@@ -1,0 +1,42 @@
+/* header {
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    align-items: left;
+}
+
+#logo {
+    height: 100px;
+    width: 120px;
+    border: 1px solid blue;
+
+}
+
+.cols {
+    border: 1px solid red;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+
+
+}
+
+.largeview {
+    border: 2px solid green;
+    height: 550px;
+    width: 400px;
+
+}
+
+.butns {
+    border: 2px solid purple;
+    height: 550px;
+    width: 400px;
+}
+
+.butnshape {
+    height: 100px;
+    width: 200px; */
+}
