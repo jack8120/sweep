@@ -1,0 +1,32 @@
+.header {
+    /* border: 3px solid blue; */
+    opacity: ;
+    
+    color: whitesmoke;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    /* z-index: -1; */
+
+}
+
+.logo {
+    /* border: 2px solid green; */
+    color: whitesmoke;
+    width:150px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    /* border: 2px solid red; */
+    color: whitesmoke;
+    width:150px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
