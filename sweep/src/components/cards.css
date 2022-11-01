@@ -72,5 +72,10 @@
   width: 100%;
   min-width: 420px;
   background-color: whitesmoke;
+  padding: 20px;
+}
+
+.test {
+  color: white;
 }
 

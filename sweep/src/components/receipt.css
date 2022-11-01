@@ -1,0 +1,15 @@
+.receipt {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 80vw;
+    min-width: 700px;
+
+}
+
+.customerDetails {
+   
+}

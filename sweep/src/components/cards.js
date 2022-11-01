@@ -1,7 +1,7 @@
 // import './cardstyle';
 
 const Card = (props) => {
-    console.log('props');
+    console.log('card props');
 
  let name      = props.Name;
  let address   = props.Address;
@@ -14,6 +14,9 @@ const Card = (props) => {
 
  let history   = props.History;
  let notes     = props.Notes;
+
+// conditional rendering
+//  let something = true;
 
  return(
     
@@ -45,6 +48,8 @@ const Card = (props) => {
              </div>
            </div>
 
+           <div className="test"></div>
+
         </div>
 
         <div className='notes'>
@@ -52,7 +57,21 @@ const Card = (props) => {
         <p>Notes: {notes}</p>
         </div>
 
+       
+
+        
+    {/* Conditional rendering */}
+
+        {/* <div className="test">
+        {something && 
+            <button>Click here</button>
+          }
+
+        </div> */}
+
+
     </div>
+    
  )
 }
 
