@@ -1,0 +1,33 @@
+
+.card {
+    border: 1px solid black;
+    max-width: 810px;
+    margin-bottom: 20px;
+    
+}
+
+.details {
+    /* border:1px solid blue; */
+    min-height: 350px;
+}
+
+.customerDetails {
+    /* border:1px solid green; */
+    float:left;
+    max-width: 300px;
+    min-width: 300px;
+    height: 100%;
+    margin-left: 50px;
+}
+.jobDetails {
+    /* border:1px solid red; */
+    float:right;
+    max-width: 300px;
+    min-width: 300px;
+    height: 100%;
+    margin-left: 50px;
+}
+.notes {
+    /* border:1px solid purple; */
+    margin-left: 50px;
+}

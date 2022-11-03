@@ -1,14 +1,16 @@
-
+import './header.css'
 
 const Header = (props) => {
     console.log('headsup');
 
     return(
-        <div className='header' >
-            <div className='logo'>logo</div>
-            <h1>Sweep</h1>
-            <div className='menu'>menu</div>
-        </div>
+        <nav className='header' >
+            <div className='logo'>logo
+            </div>
+            
+            <div className='menu'>menu
+            </div>
+        </nav>
     )
 }
 

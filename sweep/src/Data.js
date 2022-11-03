@@ -2,29 +2,71 @@
 
 const Data = [
     {
-      Name      : "Jack",
-      Address   : "8 Davidson Road",
-      Phone     : "09968078759",
-      Email     : "jackatstuff.bomb",
-      Appliance : "w/b stove",
-      Brush     : "6inch",
-      Guard     : "yes",
-      History   : "15/06/2021 2 x sweep £120",
-      Notes     : "stuff and things",
+      id        : 1,
+      name      : {
+            firstName: "Jack",
+            lastName: "Torn",
+          },
+      address   : {
+            houseName: "",
+            houseNumber: 8,
+            street: "Davidson Road",
+            city: "Norwich",
+            postCode: "NR7 0XW",
+          },
+      phone     : "09968078759",
+      email     : "jack@stuff.bomb",
+      appliance : "w/b stove",
+      brush     : "6inch",
+      guard     : "yes",
+      history   : "15/06/2021 2 x sweep £120",
+      notes     : "stuff and things",
   
     },
-    // {
-    //   Name      : "Bert",
-    //   Address   : "78 Poppins Road",
-    //   Phone     : "09968078759",
-    //   Email     : "bertatstuff.bomb",
-    //   Appliance : "Open Fire",
-    //   Brush     : "24 inch",
-    //   Guard     : "no",
-    //   History   : "12/05/2021 - 1 x sweep £60",
-    //   Notes     : "Dog called Stanley",
+    {
+      id        : 2,
+      name      : {
+            firstName: "Bert",
+            lastName: "Alfred",
+          },
+      address   : {
+            houseName: "Mary",
+            houseNumber: 98,
+            street: "Poppins Road",
+            city: "Norwich",
+            postCode: "NR2 3JN",
+          },
+      phone     : "09968035759",
+      email     : "bert@soot.bomb",
+      appliance : "Open Fire",
+      brush     : "24 inch",
+      guard     : "no",
+      history   : "12/05/2021 - 1 x sweep £60",
+      notes     : "Dog called Andrew",
   
-    // },
+    },
+    {
+      id        : 3,
+      name      : {
+            firstName: "Jack",
+            lastName: "Torn",
+          },
+      address   : {
+            houseName: "",
+            houseNumber: 8,
+            street: "Davidson Road",
+            city: "Norwich",
+            postCode: "NR7 0XW",
+          },
+      phone     : "09968078759",
+      email     : "jack@stuff.con",
+      appliance : "m/f stove",
+      brush     : "6inch",
+      guard     : "yes",
+      history   : "15/06/2021 2 x sweep £120",
+      notes     : "stuff and things",
+  
+    },
   ];
 
  export default Data

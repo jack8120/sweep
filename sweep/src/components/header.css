@@ -1,32 +1,18 @@
 .header {
-    /* border: 3px solid blue; */
-  
     
-    color: whitesmoke;
-    width: 100vw;
-    height: 12vh;
-    display: flex;
-    justify-content: space-between;
-    /* z-index: -1; */
+    min-height: 100px;
+    box-shadow: 5px 3px 2px -2px #ccc;
 
 }
 
 .logo {
-    /* border: 2px solid green; */
-    color: whitesmoke;
-    width:150px;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 .menu {
-    /* border: 2px solid red; */
-    color: whitesmoke;
-    width:150px;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
 }
