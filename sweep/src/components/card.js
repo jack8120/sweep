@@ -1,7 +1,7 @@
 import './card.css';
 
 
-
+// card component
 const Card = (props) => {
  return(
     
