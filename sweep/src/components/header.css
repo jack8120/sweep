@@ -1,18 +1,33 @@
 .header {
-    
-    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 120px;
+    max-height: 120px;
     box-shadow: 5px 3px 2px -2px #ccc;
+    background-color: black;
 
 }
 
-.logo {
-    float: left;
-    margin-top: 40px;
-    margin-left: 40px;
+.logoimg {
+
+    max-width: 100px;
+    object-fit: cover;
+    height:80px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 200px;
 }
 
-.menu {
-    float: right;
-    margin-top: 40px;
-    margin-right: 40px;
+.titleimg {
+    width: 280px;
+    object-fit: cover;
+    height:120px;
+    margin-top: 0;
+
+}
+
+.headermenu {
+    background-color: black;
+    min-width: 110px;
+    
 }

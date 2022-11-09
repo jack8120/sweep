@@ -1,0 +1,96 @@
+.receipt {
+    border:1px solid black;
+    margin: 20px;
+    box-shadow: 5px 3px 2px lightgrey;
+}
+
+.receiptheader {
+    border:1px solid black;
+    display: flex;
+    justify-content: space-between;
+    max-height: 100px;
+}
+
+.receiptimg {
+    max-width: 380px;
+    object-fit: cover;
+   
+}
+
+.hetasimg {
+    max-width: 100px;
+  
+    object-fit:contain;
+    padding-right: 10px;;
+   
+}
+.apicsimg {
+    max-width: 100px;
+    max-height: 80px;
+    padding-top: 10px;
+    padding-left: 10px;
+    object-fit: cover;
+   
+}
+
+.receiptDetails {
+    /* border: 1px solid red; */
+    max-height: 300px;
+    min-height: 200px;
+
+
+}
+.customerDetailsrec {
+    /* border: 1px solid blue; */
+    margin-left: 5px;
+    max-width: 300px;
+    min-width: 200px;
+    padding-left: 50px;
+    float:left;
+}
+.businessDetailsrec {
+    /* border: 1px solid green; */
+    max-width: 400px;
+    min-width: 400px;
+    min-height: 200px;
+    max-height: 200px;
+    float:right;
+    display: flex;
+    justify-content: center;
+    
+}
+.bxaddress {
+    border:1px solid black;
+    max-width: 180px;
+    margin: 90 0 0 0;
+    padding-top: 40px;
+}
+
+.abcsweep1 {
+   
+    max-width: 100px;
+    object-fit:contain;
+    /* border: 1px solid blue; */
+}
+.abcsweep2 {
+  
+    max-width: 100px;
+    object-fit:contain;
+    /* border: 1px solid blue; */
+
+}
+
+.jobdetails {
+    max-height: 300px;
+}
+
+.h4rec {
+    border: 1px solid black;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer {
+    margin-left: 50px;
+}

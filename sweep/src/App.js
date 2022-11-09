@@ -5,55 +5,81 @@ import Header from './components/header';
 import Card from './components/card';
 import NewCustomerForm from './components/newCustomerForm';
 import CustomerTable from './components/CustomerTable';
-
-
-// import Receipt from './components/receipt';
-
-
-import Data from './data'
-
+import Receipt from './components/receipt';
+import { useEffect,useState } from 'react';
+import axios from 'axios';
 
 //App function
 const App = () =>{
 
 
-    const cards = Data.map(item => {
+    const [data,setData] = useState([]);
+
+
+    useEffect(()=>{
+
+            const reqAPI = 'http://localhost:4000/customers/read';
+
+            axios.get(reqAPI).then((res)=>{
+                setData(res.data);
+                console.log(res)
+            }).catch((err)=>{
+                console.log(err);
+            });
+    },[]);
+
+
+   const cards = data.map(item => {
         return (
           <Card
-              key={item.id}
+              key={item._id}
               item={item}
               />
               
         )
     })
 
-    const table = Data.map(item => {
+    const receipt = data.map(item => {
         return (
-          <CustomerTable
-              key={item.id}
+          <Receipt
+              key={item._id}
               item={item}
               />
               
         )
     })
-  
 
 
 return (
  
     <div className='main'>
+        
+        
         <Header className="header"/>
 
+
+                <h1>Calendar?</h1>
         <section className='content'>
-            <div>
+        <h1> Office Office Office Office Office Office  </h1>
+           <div>
+                <NewCustomerForm />
+           </div>
+           <div>
+           <CustomerTable
+              item={data}
+              />
+           </div>
+          
+           <div>
               {cards}
            </div>
-        </section>
-        <section>
-            <NewCustomerForm />
-        </section>
-        <section>
-                {table}
+           <div>
+              {receipt}
+           </div>
+        
+            
+       
+                
         </section>
 
    

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
+import './newCustomerForm.css';
 
 const NewCustomerForm = () => {
   // Data render state
@@ -31,22 +32,24 @@ const NewCustomerForm = () => {
   const newCustomerSubmitted = async (event) => {
     event.preventDefault();
 
+    const eventTarget = event.target;
+
     //posting the url
 
-    const _firstName   = event.target.firstName.value;
-    const _lastName    = event.target.lastName.value;
-    const _phone       = event.target.phone.value;
-    const _email       = event.target.email.value;
-    const _houseName   = event.target.houseName.value;
-    const _houseNumber = event.target.houseNumber.value;
-    const _street      = event.target.street.value;
-    const _city        = event.target.city.value;
-    const _postCode    = event.target.postCode.value;
-    const _appliance   = event.target.appliance.value;
-    const _brush       = event.target.brush.value;
-    const _guard       = event.target.guard.value;
-    const _history     = event.target.history.value;
-    const _notes       = event.target.notes.value;
+    const _firstName   = eventTarget.firstName.value;
+    const _lastName    = eventTarget.lastName.value;
+    const _phone       = eventTarget.phone.value;
+    const _email       = eventTarget.email.value;
+    const _houseName   = eventTarget.houseName.value;
+    const _houseNumber = eventTarget.houseNumber.value;
+    const _street      = eventTarget.street.value;
+    const _city        = eventTarget.city.value;
+    const _postCode    = eventTarget.postCode.value;
+    const _appliance   = eventTarget.appliance.value;
+    const _brush       = eventTarget.brush.value;
+    const _guard       = eventTarget.guard.value;
+    const _history     = eventTarget.history.value;
+    const _notes       = eventTarget.notes.value;
   
     // object - created on form submit
 
@@ -80,7 +83,8 @@ const NewCustomerForm = () => {
 
       const reqAPI = "http://localhost:4000/customers/read";
 
-      const reqData = axios.get(reqAPI);
+      const reqData = await axios.get(reqAPI);
+      console.log(reqData)
       setApiData(reqData.data);
 
     } catch (err) {
@@ -105,8 +109,8 @@ const NewCustomerForm = () => {
     </div>
 
           </div> */}
-
-      <div className="newCustomer">
+          <h1>New Customer Form</h1>
+      <div className="newCustomerForm">
         <form onSubmit={newCustomerSubmitted}>
           <input type="text" name="firstName" placeholder="First Name" />
           <br />
@@ -132,9 +136,9 @@ const NewCustomerForm = () => {
           <br />
           <input type="text" name="guard" placeholder="guard" />
           <br />
-          <textarea name="history" placeholder="history" />
+          <textarea name="history" placeholder="history"></textarea>
           <br />
-          <textarea name="notes" placeholder="notes"/>
+          <textarea name="notes" placeholder="notes"></textarea>
           <br />
           <input type="submit" value="submit" />
         </form>

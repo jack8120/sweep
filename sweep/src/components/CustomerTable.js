@@ -1,67 +1,68 @@
-import "./ctable.css"
-import React, { useState, useEffect } from "react";
+import "./CustomerTable.css"
+import React, { useState } from "react";
 
 const CustomerTable = (props) => {
+
+
+
+  const _data = props.item;
+
+  console.log("Data:",_data)
+
+
+
   return(
 
-    const [data, setData] = useState([]);
+        <div className="table">
+          
+          <table>
+            <tr>
+              <th>firstName</th>
+              <th>lastName</th>
+              <th>houseName</th>
+              <th>houseNumber</th>
+              <th>street</th>
+              <th>city</th>
+              <th>postCode</th>
+              <th>phone</th>
+              <th>email</th>
+              <th>appliance</th>
+              <th>brush</th>
+              <th>guard</th>
+              <th>history</th>
+              <th>notes</th>
+            </tr>
 
-  // Using useEffect to call the API once mounted and set the data
-  useEffect(() => {
-    (async () => {
-      const result = await axios("https://localhost:3000/customers/read");
-      setData(result.data);
-    })();
-  }, []);
+              {
+                _data.map((value,index)=>{
+                  return(
 
-  return (
-    <div className="App"></div>
-  );
+                  <tr key={index}>
+                    <td>{value.firstName}</td>
+                    <td>{value.lastName}</td>
+                    <td>{value.houseName}</td>
+                    <td>{value.houseNumber}</td>
+                    <td>{value.street}</td>
+                    <td>{value.city}</td>
+                    <td>{value.postCode}</td>
+                    <td>{value.phone}</td>
+                    <td>{value.email}</td>
+                    <td>{value.appliance}</td>
+                    <td>{value.brush}</td>
+                    <td>{value.guard}</td>
+                    <td>{value.history}</td>
+                    <td>{value.notes}</td>
+                </tr>
 
-
-
-   
-        // <div className="table">
-        //   <table>
-        //     <tbody>
-        //     <tr>
-        //       <th>firstName</th>
-        //       <th>lastName</th>
-        //       <th>houseName</th>
-        //       <th>houseNumber</th>
-        //       <th>street</th>
-        //       <th>city</th>
-        //       <th>postCode</th>
-        //       <th>phone</th>
-        //       <th>email</th>
-        //       <th>appliance</th>
-        //       <th>brush</th>
-        //       <th>guard</th>
-        //       <th>history</th>
-        //       <th>notes</th>
-        //     </tr>
-        //     </tbody>
+                  )
+                })
+              }
            
-        //         <tr key={key}>
-        //           <td>{val.firstName}</td>
-        //           <td>{val.lastName}</td>
-        //           <td>{val.houseName}</td>
-        //           <td>{val.houseNumber}</td>
-        //           <td>{val.street}</td>
-        //           <td>{val.city}</td>
-        //           <td>{val.postCode}</td>
-        //           <td>{val.phone}</td>
-        //           <td>{val.email}</td>
-        //           <td>{val.brush}</td>
-        //           <td>{val.guard}</td>
-        //           <td>{val.history}</td>
-        //           <td>{val.notes}</td>
-                  
-        //         </tr>
+                
               
            
-        //   </table>
-        // </div>
+          </table>
+        </div>
       );  
 }
   

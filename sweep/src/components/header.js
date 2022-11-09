@@ -5,10 +5,22 @@ const Header = (props) => {
 
     return(
         <nav className='header' >
-            <div className='logo'>logo
+            <div className='logo'>
+            <img
+          className="logoimg"
+          src={require("../images/logoBlue.png")}
+          alt="logo"
+        ></img>
             </div>
+            <div>
+            <img
+          className="titleimg"
+          src={require("../images/titleBlack.png")}
+          alt="logo"
+        ></img>
+        </div>
             
-            <div className='menu'>menu
+            <div className='headermenu'>menu
             </div>
         </nav>
     )
