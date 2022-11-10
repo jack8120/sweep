@@ -6,6 +6,7 @@ import Card from './components/card';
 import NewCustomerForm from './components/newCustomerForm';
 import CustomerTable from './components/CustomerTable';
 import Receipt from './components/receipt';
+import './App.css';
 import { useEffect,useState } from 'react';
 import axios from 'axios';
 
@@ -57,10 +58,13 @@ return (
         
         <Header className="header"/>
 
-
-                <h1>Calendar?</h1>
         <section className='content'>
-        <h1> Office Office Office Office Office Office  </h1>
+            <div className='herocontainer'>
+            <img className='heroimg' src={require("./images/rooftops.jpg")} alt="rooftops"/>
+          
+            <i class="fa-solid fa-arrow-down"></i>
+            </div>
+      
            <div>
                 <NewCustomerForm />
            </div>

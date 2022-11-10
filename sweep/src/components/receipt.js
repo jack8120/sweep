@@ -24,13 +24,14 @@ const Receipt = (props) => {
 
         <section className="receiptDetails">
             <div className="customerDetailsrec">
-                <h3>Date:</h3>
-                <h3>{_data.houseName}<br/>
+                <h4 className='date'>Date: 11/11/22</h4>
+                <h3 className='name'>{_data.firstName} {_data.lastName}</h3>
+                <h4 className='receiptaddress'>{_data.houseName}<br/>
                 {_data.houseNumber} {_data.street}<br/>
                 {_data.city}<br/>
                 {_data.postCode}
-                </h3>
-                <h3>{_data.firstName} {_data.lastName}</h3>
+                </h4>
+                
             </div>
 
             <div className="businessDetailsrec">
@@ -53,17 +54,17 @@ const Receipt = (props) => {
         <div className="jobdetails">
                 
 
-            <form>
-                <select name ="work carried out">
+            <form className='workinfo'>
+                <select className='workdone' name ="work carried out">
                     <option value="1 x sweep / inspection">1 x sweep / inspection</option>
                     <option value="2 x sweep / inspection">2 x sweep / inspection</option>
                     <option value="Call out Charge only">Call out Charge only</option>
                 </select>    
-                <textarea name="Additional info" placeholder="Additional info"></textarea>
+                <textarea className='additionalinfo' name="Additional info" placeholder="Additional info"></textarea>
            
             </form>
-            <h2>
-                Total £
+            <h2 className='total'>
+                Total £ 60
             </h2>
             <h4 className='h4rec'>REGULAR SWEEPING IS IMPORTANT, CLEAN CHIMNEYS ARE SAFE CHIMNEYS</h4>
             <div className="footer">Herbert Alfred, 17 Cherry Tree Lane, SW10 London. Compnay Number 0987654321</div>

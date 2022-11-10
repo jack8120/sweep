@@ -1,10 +1,15 @@
 .header {
+    position: fixed;
+    width:100vw;
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
     min-height: 120px;
     max-height: 120px;
     box-shadow: 5px 3px 2px -2px #ccc;
     background-color: black;
+    Z-INDEX: 20;
+    
 
 }
 
@@ -14,7 +19,7 @@
     object-fit: cover;
     height:80px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 18px;
     border-radius: 200px;
 }
 
