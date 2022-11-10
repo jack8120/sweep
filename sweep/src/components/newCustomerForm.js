@@ -10,7 +10,7 @@ const NewCustomerForm = () => {
 
   // Read
   const getAPI = async () => {
-    const reqAPI = "http://localhost:4000/customers/read";
+    const reqAPI = "https://sweep-api.netlify.app/.netlify/functions/api/customers/read";
 
     const reqData = axios.get(reqAPI).then((response) => {
       return response.data;
@@ -76,12 +76,12 @@ const NewCustomerForm = () => {
 
     try {
       const dataSubmitting = await axios.post(
-        "http://localhost:4000/customers/create",
+        "https://sweep-api.netlify.app/.netlify/functions/api/customers/create",
         newCustomer
       );
       console.log(dataSubmitting);
 
-      const reqAPI = "http://localhost:4000/customers/read";
+      const reqAPI = "https://sweep-api.netlify.app/.netlify/functions/api/customers/read";
 
       const reqData = await axios.get(reqAPI);
       console.log(reqData)

@@ -19,7 +19,7 @@ const App = () =>{
 
     useEffect(()=>{
 
-            const reqAPI = 'http://localhost:4000/customers/read';
+            const reqAPI = 'https://sweep-api.netlify.app/.netlify/functions/api/customers/read';
 
             axios.get(reqAPI).then((res)=>{
                 setData(res.data);
