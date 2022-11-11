@@ -50,6 +50,12 @@ const App = () =>{
         )
     })
 
+    const dataFromChildHandler = (args) =>{
+        console.log("Child data",args);
+
+        setData(args);
+    }
+
 
 return (
  
@@ -66,12 +72,14 @@ return (
             </div>
       
            <div>
-                <NewCustomerForm />
+                <NewCustomerForm 
+                handler = {dataFromChildHandler}  />
            </div>
 
            <div>
-            <h1>Customer Database</h1>
+            <h1 className='custdatbasetitle'>Customer Database</h1>
            <CustomerTable
+              
               item={data}
               />
            </div>

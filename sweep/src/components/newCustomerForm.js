@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import './newCustomerForm.css';
 
-const NewCustomerForm = () => {
+const NewCustomerForm = (props) => {
   // Data render state
   const [apiData, setApiData] = useState();
   // const [post, setPost] = useState([]);
@@ -86,6 +86,9 @@ const NewCustomerForm = () => {
       const reqData = await axios.get(reqAPI);
       console.log(reqData)
       setApiData(reqData.data);
+
+      props.handler(reqData.data);
+
 
     } catch (err) {
       console.log(err);
