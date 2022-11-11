@@ -61,20 +61,24 @@ return (
         <section className='content'>
             <div className='herocontainer'>
             <img className='heroimg' src={require("./images/rooftops.jpg")} alt="rooftops"/>
-          
+            
             <i class="fa-solid fa-arrow-down"></i>
             </div>
       
            <div>
                 <NewCustomerForm />
            </div>
+
            <div>
+            <h1>Customer Database</h1>
            <CustomerTable
               item={data}
               />
            </div>
+           
           
            <div>
+           <img className='van' src={require("./images/whitevan.png")} alt="rooftops"/>
               {cards}
            </div>
            <div>

@@ -15,7 +15,7 @@ const Header = (props) => {
             <div>
             <img
           className="titleimg"
-          src={require("../images/titleBlack.png")}
+          src={require("../images/transTitle.png")}
           alt="logo"
         ></img>
         </div>

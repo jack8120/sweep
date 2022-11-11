@@ -109,7 +109,7 @@ const NewCustomerForm = () => {
     </div>
 
           </div> */}
-          <h1>New Customer Form</h1>
+          <h1 className="newCustomerHeading" >New Customer Form</h1>
       <div className="newCustomerForm">
         <form onSubmit={newCustomerSubmitted}>
           <input type="text" name="firstName" placeholder="First Name" />

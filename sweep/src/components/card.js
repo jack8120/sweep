@@ -18,8 +18,8 @@ const Card = (props) => {
                 <h1>Customer Details</h1>
                 <hr/>
                 <h3>{_data.firstName} {_data.lastName}</h3>
-                <h3>{_data.houseName}</h3>
-                <h3>{_data.houseNumber} {_data.street}<br/>
+                <h3>{_data.houseName}<br/>
+                {_data.houseNumber} {_data.street}<br/>
                 {_data.city}<br/>
                 {_data.postCode}
                 </h3>

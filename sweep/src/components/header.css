@@ -1,22 +1,23 @@
 .header {
-    position: fixed;
+    position: sticky;
     width:100vw;
-    margin-top: 0;
+    top: 0;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
     min-height: 120px;
     max-height: 120px;
     box-shadow: 5px 3px 2px -2px #ccc;
     background-color: black;
-    Z-INDEX: 1;
+    z-index: 20;
     
 
 }
 
 .logoimg {
 
-    max-width: 100px;
-    object-fit: cover;
+    max-width: 80px;
+    object-fit: contain;
     height:80px;
     margin-left: 10px;
     margin-top: 18px;
@@ -24,10 +25,10 @@
 }
 
 .titleimg {
-    width: 280px;
+    
     object-fit: cover;
-    height:120px;
-    margin-top: 0;
+    max-height:300px;
+    margin-top: 10px;
 
 }
 

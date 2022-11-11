@@ -1,7 +1,12 @@
 .newCustomerForm {
     min-width: 90%;
     padding:10px;
-    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.newCustomerHeading {
+    margin-top:80px;
 }
 
 input ,textarea{
